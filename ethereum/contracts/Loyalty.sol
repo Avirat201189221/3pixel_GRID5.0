@@ -12,11 +12,13 @@ contract Loyalty {
         string name;
         string id;
         uint uId;
+        
     }
     struct User {
         string name;
         uint uId;
         uint parentId;
+        uint lastUsageTimestamp; 
         mapping(uint=>uint) balances;
 
     }
@@ -26,15 +28,25 @@ contract Loyalty {
         uint aId;
         uint cId;
     }
+    // struct redeemBoard{
+
+    // }
     uint numUsers;
     mapping(uint => User) public users;
     constructor()   {
         owner = msg.sender;
+        addCompany("Parent Company", "FlipKart");
+        addUser(0, "Flipkart", 0, 1000000);
     }
     function getAllCompanies() public view returns(uint) {
         return companiesArr.length;
     }
     function addCompany(string memory id, string memory name) public {
+        for (uint i = 0; i < companiesArr.length; i++) {
+            if (keccak256(bytes(companiesArr[i].id)) == keccak256(bytes(id))) {
+                revert("Company with the same ID already exists");
+            }
+        }
         Company memory newCompany = Company({
             id: id,
             name: name,
@@ -58,6 +70,7 @@ contract Loyalty {
         u.name = name;
         u.uId = uId;
         u.parentId = cId;
+        u.lastUsageTimestamp = block.timestamp; 
         addUserBal(uId, cId, bal);
     }
     function addUserBal(uint uId, uint cId, uint bal) public {

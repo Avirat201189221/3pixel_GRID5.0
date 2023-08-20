@@ -13,7 +13,7 @@ main {
 .main-flex{
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height:70vh;
     width:70vw;
     background-color:whitesmoke;
     color: black!important;
@@ -37,4 +37,6 @@ main {
 }
 .result img{
     max-width:50px;
-}
+}#logout:hover {
+    color: blue !important;
+  }
