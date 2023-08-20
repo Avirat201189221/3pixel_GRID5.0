@@ -39,7 +39,7 @@ transparency, and user engagement.
 - Converting tokens to loyalty points to avail rewards.
 
 ### Our Implementation
-<img src="https://drive.google.com/file/d/1oaxtRDgfrC0uBzeao7e8hR-FWO4KkZ9C/view?usp=sharing"> 
+<img src="https://drive.google.com/file/d//uc?id=ss1.jpg"> 
 <img src="https://drive.google.com/file/d/1W9B-_euUATBGpWUulL_MKrrtwcWyP8SI/view?usp=drive_link"> 
 <img src="https://drive.google.com/file/d/1RV5Qd6jzIjYTxXcJqd1Mk8xnQeCNO1f2/view?usp=drive_link"> 
 <img src="https://drive.google.com/file/d/17TMTtY3DxymPdPAXewe-PaMoZfc4t_k0/view?usp=drive_link"> 
