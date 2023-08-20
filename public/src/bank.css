@@ -13,7 +13,7 @@ main {
 .main-flex{
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height:70vh;
     width:70vw;
     background-color:white;
     color: black!important;
@@ -32,3 +32,6 @@ main {
     justify-items: center;
     width: 90%;
 }
+#logout:hover {
+    color: blue !important;
+  }
