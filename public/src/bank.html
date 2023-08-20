@@ -40,6 +40,57 @@
       });
     });
   </script>
+  <!-- <script>
+    // document.getElementById("sub_btn").onclick(){
+    //   const balanceSpan=document.getElementById("balance");
+    //   const inputElement = document.getElementById("nameInp");
+    //   console.log(balanceSpan,inputElement)
+    //   document.getElementById("balance").textContent=balanceSpan - (0.365)*inputElement;
+    // }
+    // document.getElementById("sub_btn").addEventListener("click", deductUrl);
+    document.getElementById("sub_btn").addEventListener("click", function() {
+            const balanceSpan = document.getElementById("balance").textContent;
+            const inputElement = document.getElementById("nameInp");
+            
+            // Convert input value to a number
+            const inputValue = parseFloat(inputElement.value);
+            
+            // Check if the input is a valid number
+            if (!isNaN(inputValue)) {
+                const newBalance = parseFloat(balanceSpan.textContent) - (0.365) * inputValue;
+                balanceSpan.textContent = newBalance.toFixed(2); // Display new balance with 2 decimal places
+            } else {
+                console.log("Invalid input");
+            }
+        });
+  </script> -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const balanceSpan = document.getElementById("balance");
+        const inputElement = document.getElementById("nameInp");
+        const confirmButton = document.getElementById("sub_btn");
+        console.log(balanceSpan,inputElement);
+
+        confirmButton.addEventListener("click", function () {
+            const inputValue = parseFloat(inputElement.value);
+            
+            // Check if the input value is a valid number
+            if (!isNaN(inputValue)) {
+                const currentBalance = parseFloat(balanceSpan.textContent);
+                const deductionAmount = 0.365 * inputValue;
+                const newBalance = currentBalance - deductionAmount;
+
+                // Update the balance span with the new balance
+                balanceSpan.textContent = newBalance.toFixed(2);
+            } else {
+                console.log("Invalid input value:", inputElement.value);
+            }
+        });
+    });
+</script>
+
+
+
   
   </head>
   <body>
@@ -55,11 +106,11 @@
     <main>
       <div class="container">
         <div class="token-display">
-          <h1 style="color:#323232">FlipKash Owned by You : 100 FK</h1>
+          <h1 style="color:#323232">FlipKash Owned by You : <span id="balance">100</span>FK </h1>
           <img class="coin-image" src="../images/coins.png">
       </div>   
         <div class="main-flex">
-          <h1 style="margin-top:2rem;color:black">FlipKash Conversion</h1>
+          <h1 style="margin-top:2rem;color:black" >FlipKash Conversion</h1>
           <div class="conversion-data">
             <div class="left">
               <h2 style="color:black;margin-bottom: 2rem;">Select Your Subsidiary</h2>
