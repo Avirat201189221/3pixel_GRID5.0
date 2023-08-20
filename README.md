@@ -17,12 +17,6 @@ transparency, and user engagement.
 - ***Users can exchange tokens for loyalty points from various subsidiaries***, An overview of their owned tokens and loyalty points across diverse Flipkart-owned entities.
 - ***Tokens are earned through Flipkart purchases, referrals and social media engagement***. They unlock rewards, including discounts, free shipments, and exclusive perks.
 - ***prioritizing eco-friendly products will be rewarded with an augmented token earning***. Additionally, users can ***contribute their tokens to charitable causes***, fostering a culture of giving back.
-  
-### Instructions:-
-- Registration using Sign Up, then Login.
-- Exploring the various rewards offered by trading tokens. 
-- Viewing the many different subsidiaries Flipkart has.
-- Converting tokens to loyalty points to avail rewards.
 
 ### Features:-
 - ***Blockchain-Based rewards system ensures transparency.***
@@ -33,11 +27,16 @@ transparency, and user engagement.
 - ***Seamless token exchange to enjoy perks from a wide range of subsidiaries.***
 
 ### Tech-Stack
-- Blochain(Solidity)
-- Frontend: HTML, CSS, Vanilla JS, Bootstrap
-- Backend: Node.js, ExpressJS
-- Database: Firebase
-
+- Blochain(***Solidity***)
+- Frontend: ***HTML, CSS, Vanilla JS, Bootstrap***
+- Backend: ***Node.js, ExpressJS***
+- Database: ***Firebase***
+  
+### Instructions:-
+- Registration using Sign Up, then Login.
+- Exploring the various rewards offered by trading tokens. 
+- Viewing the many different subsidiaries Flipkart has.
+- Converting tokens to loyalty points to avail rewards.
 
 
 ### Our Implementation
