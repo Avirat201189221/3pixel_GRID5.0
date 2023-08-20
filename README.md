@@ -13,10 +13,10 @@ platforms, leveraging the advantages of blockchain technology to enhance securit
 transparency, and user engagement.
 
 ## Our solution
-- An interface that allows ***unified token exchange across Flipkart and its subsidiaries***.***Each subsidiary*** functions as a ***distinct and autonomous node within the blockchain network***. 
+- An interface that allows ***unified token exchange across Flipkart and its subsidiaries***.***Each subsidiary*** functions as a ***distinct and autonomous node within the blockchain network*** . 
 - ***Users can exchange tokens for loyalty points from various subsidiaries***, An overview of their owned tokens and loyalty points across diverse Flipkart-owned entities.
--***Tokens are earned through Flipkart purchases, via referrals and social media engagement***. They unlock rewards, including discounts, free shipments, and many more exclusive perks.
--***prioritizing eco-friendly products will be rewarded with an augmented token earning***. Additionally, users have the option to ***contribute their tokens to charitable causes***, fostering a culture of giving back.
+- ***Tokens are earned through Flipkart purchases, via referrals and social media engagement***. They unlock rewards, including discounts, free shipments, and many more exclusive perks.
+- ***prioritizing eco-friendly products will be rewarded with an augmented token earning***. Additionally, users have the option to ***contribute their tokens to charitable causes***, fostering a culture of giving back.
   
 ### Instructions:-
 - Registeration using Sign Up, then Login.
