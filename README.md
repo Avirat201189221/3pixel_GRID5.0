@@ -1,4 +1,4 @@
-## FlipKash - Fungible Token Based On A Blockchain-Loyalty&Rewards system.
+## FlipKash - Fungible Token Based On A Blockchain-Loyalty&Rewards System.
 Flipkart Grid 5.0 2023 theme:  Blockchain
 
 ### Team members:-
@@ -25,6 +25,9 @@ transparency, and user engagement.
 - GUI-Based tool means ***users can use it without prior knowledge of Blockchain**.
 - ***Incentive to support eco-friendly products***.
 - ***Seamless token exchange to enjoy perks from a wide range of subsidiaries.***
+
+### Blockchain Diagram
+<img src="https://res.cloudinary.com/dgbobpgf4/image/upload/v1692556878/bs/Screenshot_from_2023-08-20_16-59-33_xv9jap.png"><br><br>
 
 ### Tech-Stack
 - Blochain(***Solidity***)
