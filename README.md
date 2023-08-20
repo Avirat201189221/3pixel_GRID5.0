@@ -43,11 +43,8 @@ transparency, and user engagement.
 - ***Face Detection*** : Using MTCNN (Multi-Task Cascaded Convolutional Neural Network) and SSD MobileNetV1 Model. Creates a rectangular boundary around the face in the image.
 - ***Face Recognition*** : Using 68 point face-landmark detection Model. Demarcates 68 different points on the face to describe the face characteristics. Finds Euclidean distance between these points.
 
-<!-- ### Our Implementation
-<img src="Screenshots/1.jpeg"> 
-<img src="Screenshots/2.jpeg"> 
-<img src="Screenshots/3.jpeg"> 
-<img src="Screenshots/4.jpeg"> 
-<img src="Screenshots/5.jpeg"> 
-<img src="Screenshots/6.jpeg"> 
-<img src="Screenshots/7.jpeg">  -->
+### Our Implementation
+<img src="public/images/implementation/ss1.jpg"> 
+<img src="public/images/implementation/ss2.jpg"> 
+<img src="public/images/implementation/ss3.jpg"> 
+<img src="public/images/implementation/ss4.jpg"> 
