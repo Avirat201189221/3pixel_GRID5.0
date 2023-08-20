@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Flipkash</title>
+    <title>FlipKash</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="global.css" />
@@ -13,8 +13,10 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script defer type="text/javascript" src="./script.js"></script>
     <script defer type="module" src="./logout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="topnav">
@@ -28,14 +30,54 @@
     <main>
       <div class="container">
         <div class="main-flex">
-          <h1 style="margin-top:2rem;color:white">Flipkash Conversion</h1>
+          <h1 style="margin-top:2rem;color:black">FlipKash Conversion</h1>
           <div class="conversion-data">
             <div class="left">
-              <h1 style="color:white">Select Your Subsidiary</h1>
-
+              <h2 style="color:black;margin-bottom: 2rem;">Select Your Subsidiary</h1>
+              <div class="dropdown-center">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Subsidiary
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Myntra</a></li>
+                  <li><a class="dropdown-item" href="#">ClearTrip</a></li>
+                  <li><a class="dropdown-item" href="#">Jabong</a></li>
+                </ul>
+              </div>
+              <div class="mb-5">
+                <div class="mylabel" style="color:black;margin-top: 2rem;"> 
+                  <label for="nameInp">How Many Loyalty Points Do You Want ? </label> 
+                </div>
+                <input
+                  type="text"
+                  placeholder="Enter Amount"
+                  id="nameInp"
+                  class="form-control mb-3 topper"
+                />
+      
+                <button style="background-color: #f9ec63;
+                border: none;"
+                  type="text"
+                  id="sub_btn"
+                  class="btn w-100 btn-outline-primary mb-3"
+                >
+                  Convert
+                </button>
+  
+              </div>
             </div>
             <div class="right">
-              <h1 style="color:white"></h1>
+              <h2 style="color:black;margin-bottom: 2rem;">Conversion Results</h1>
+                <div class="dropdown-center" style="opacity:0;">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Subsidiary
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Myntra</a></li>
+                    <li><a class="dropdown-item" href="#">ClearTrip</a></li>
+                    <li><a class="dropdown-item" href="#">Jabong</a></li>
+                  </ul>
+                </div>
             </div>
           </div>
         </div>
