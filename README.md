@@ -39,10 +39,10 @@ transparency, and user engagement.
 - Converting tokens to loyalty points to avail rewards.
 
 ### Our Implementation
-<img src="https://raw.githubusercontent.com/Avirat201189221/3pixel_GRID5.0/master/public/images/implementation/ss1.jpg"> 
-<img src="public/images/implementation/ss2.jpg"> 
-<img src="public/images/implementation/ss3.jpg"> 
-<img src="public/images/implementation/ss4.jpg"> 
+<img src="https://drive.google.com/file/d/1oaxtRDgfrC0uBzeao7e8hR-FWO4KkZ9C/view?usp=sharing"> 
+<img src="https://drive.google.com/file/d/1W9B-_euUATBGpWUulL_MKrrtwcWyP8SI/view?usp=drive_link"> 
+<img src="https://drive.google.com/file/d/1RV5Qd6jzIjYTxXcJqd1Mk8xnQeCNO1f2/view?usp=drive_link"> 
+<img src="https://drive.google.com/file/d/17TMTtY3DxymPdPAXewe-PaMoZfc4t_k0/view?usp=drive_link"> 
 
 ### Block Diagram
 <img src="https://res.cloudinary.com/dgbobpgf4/image/upload/v1692556878/bs/Screenshot_from_2023-08-20_16-59-33_xv9jap.png"><br><br>
