@@ -26,9 +26,6 @@ transparency, and user engagement.
 - ***Incentive to support eco-friendly products***.
 - ***Seamless token exchange to enjoy perks from a wide range of subsidiaries.***
 
-### Blockchain Diagram
-<img src="https://res.cloudinary.com/dgbobpgf4/image/upload/v1692556878/bs/Screenshot_from_2023-08-20_16-59-33_xv9jap.png"><br><br>
-
 ### Tech-Stack
 - Blochain(***Solidity***)
 - Frontend: ***HTML, CSS, Vanilla JS, Bootstrap***
@@ -41,9 +38,11 @@ transparency, and user engagement.
 - Viewing the many different subsidiaries Flipkart has.
 - Converting tokens to loyalty points to avail rewards.
 
-
 ### Our Implementation
 <img src="public/images/implementation/ss1.jpg"> 
 <img src="public/images/implementation/ss2.jpg"> 
 <img src="public/images/implementation/ss3.jpg"> 
 <img src="public/images/implementation/ss4.jpg"> 
+
+### Block Diagram
+<img src="https://res.cloudinary.com/dgbobpgf4/image/upload/v1692556878/bs/Screenshot_from_2023-08-20_16-59-33_xv9jap.png"><br><br>
