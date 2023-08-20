@@ -115,8 +115,52 @@
   .section-container button#submitBtn.btn.w-100.btn-outline-primary.mb-3:hover {
     background: #f9ec63;
   }
+
+  .image-wrapper {
+    height: 20rem;
+    width: 40rem;
+    border-radius: 6px;
+    background-color: #047BD5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+  }
+  .image-wrapper img {
+    height: auto;
+    max-width: 100%;
+  }
   
- 
+  .shine {
+    position: relative;
+    overflow: hidden;
+  }
+  .shine::before {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: -75%;
+    position: absolute;
+    top: 0;
+    transform: skewX(-25deg);
+    width: 50%;
+    z-index: 2;
+  }
+  .shine:hover::before, .shine:focus::before {
+    -webkit-animation: shine 1.5s;
+            animation: shine 1.5s;
+  }
+  @-webkit-keyframes shine {
+    100% {
+      left: 125%;
+    }
+  }
+  @keyframes shine {
+    100% {
+      left: 125%;
+    }
+  }
   .ask-account {
     font-size: 15px;
     margin: 10px 0;
