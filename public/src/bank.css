@@ -15,7 +15,7 @@ main {
     flex-direction: column;
     height: 60vh;
     width:70vw;
-    background-color:white;
+    background-color:whitesmoke;
     color: black!important;
     /* justify-content: center; */
     align-items: center;
@@ -31,4 +31,10 @@ main {
     align-items: center;
     justify-items: center;
     width: 90%;
+}
+.result{
+    display: flex;
+}
+.result img{
+    max-width:50px;
 }
