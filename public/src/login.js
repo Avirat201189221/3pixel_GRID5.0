@@ -12,7 +12,7 @@ sessionStorage.setItem('payFromFacePageOnly', payFromFacePageOnly);
 
 // if already logged in avoid login again
 let currentUser = null;
-let keepLoggedIn = localStorage.getItem("keepLoggedIn"); 
+let keepLoggedIn = localStorage.getItem("keepLoggedIn");  
 function getUserName() {
     if (keepLoggedIn == "yes") {
         currentUser = JSON.parse(localStorage.getItem('user'));
@@ -23,7 +23,7 @@ function getUserName() {
 getUserName();
 if (currentUser) {
     swal("Already Logged In!", "Log Out first to continue.", "warning").then(function() {
-        window.location.replace('./wallet.html');
+        window.location.replace('./bank.html');
     });
 }
 
@@ -133,11 +133,11 @@ function login(user) {
     
     if (!keepLoggedIn) {
         sessionStorage.setItem('user', JSON.stringify(user));
-        window.location.replace("./bank.html");
+        window.location.replace("./src/bank.html");
     } else {
         localStorage.setItem('keepLoggedIn','yes');
         localStorage.setItem('user', JSON.stringify(user));
-        window.location.replace("./bank.html");
+        window.location.replace("./src/bank.html");
     }
 }
 

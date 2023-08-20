@@ -1,191 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&display=swap');
-body {
+/* Reset and global styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #2f3337;
-}
-.topnav {
-    overflow: hidden;
-    background-color: #222222;
-    font-family: 'Bebas Neue', sans-serif;
-
   }
   
-  .topnav a {
-    float: left;
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #1e1e1e;
     color: #fff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    letter-spacing: 1px;
+    text-shadow: 0 2px 2px lightgray;
+    overflow: hidden;
+    margin: 0;
   }
   
-  
-  .topnav a:hover {
-    background-color: #222222;
-    /* color: black; */
-  }
-  
-  .topnav a.active {
-    background-color: #0073cf;
-    color: white;
-  }
-  
-  .topnav-right {
-    float: right;
-  }
-
-main {
-    width: auto;
-    margin: 1% 10%;
-}
-         
-.section-container {
-    height: 50%;
-    max-height: 100vh;
-    width: auto;
-    position: relative;
-    margin: 4% 8% 3% 8%;
+  .container {
     display: flex;
-    justify-content: center;
-    box-shadow: 0px 3px 8px #002447;
-    border-radius: 2rem;
-    transition: all 300ms ease-in-out;
-    background-color: #222222;
-}
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
 
-.section-container:hover {
-    box-shadow: 0px 8px 16px;
-}
-
-.section-container .imgBx {
-    position: relative;
-    width:  50%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    border-radius: 2rem;
-    text-align: center;
-    height: auto;
-    background-color: #222222;
-}
-
-.section-container .imgBx:Before {
-    content: '';
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.section-container .imgBx img{
-    position: relative;
-    margin: 0 0 0 6%;
-    top: 0;
-    left: 0;
-    width: 350px;
-    height: 350px;
-    object-fit: fill;
-    border-radius: 2rem;
-}
-
-.section-container .mb-5{
-   
-    width: 50%;
-    height: auto;
-
+  
+  .left-half,
+  .right-half {
+    flex: 1;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-}
-
-.section-container .mb-5.mb-3{
-    width: 50%;
-    color: #fff;
-}
-
-.section-container h3.mb-3 {
-    margin: 0 17%;
-    padding-top: 1rem;
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-    border-bottom: 3px solid #0073cf;
-    display: inline-block;
-    letter-spacing: 2px;
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 0px !important;
-}
-
-.topper {
-    margin-top: 2%;
-}
-.mb-5 h3,
-.mb-5 input,
-.mb-5 .custom-control,
-.mb-5 button,
-.mb-5 .ask-account {
-  margin: 10px;
-}
-.section-container input.form-control.mb-3{
-    font-size: 16px;
-    margin-bottom: 5px;
-    color: #000;
-    letter-spacing: 2px;
-    width: 82%;
-    border-radius: 30px;
+  }
+  
+  .left-half {
+    background-color: #047BD5;
+  }
+  
+  .right-half {
+    background-color: #f7f7f7; 
+    display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 10px 20px;
+    border-radius: 0;
+  }
   
-}
-.section-container input::placeholder{
-    font-size: 20px;
-    color: #000;
-    font-family: 'Bebas Neue', sans-serif;
-}
-.section-container button#submitBtn.btn.w-100.btn-outline-primary.mb-3{
-    width: 82% !important;
-    background: #0073cf;
-    color: #fff;
-    border-radius: 28px;
-    font-size: 25px;
-    letter-spacing: 2px;
-    font-family: 'Bebas Neue', sans-serif;
-}
-
-.section-container button#submitBtn.btn.w-100.btn-outline-primary.mb-3:hover{
-    background: #004e8e;
+  .section-container {
+    text-align: center;
+    padding: 20px;
+    width: 60%;
+    color: #1e1e1e; 
+  }
+  
+  .section-container h3.mb-3 {
+    font-size: 35px;
+    color: #323232; 
+    /* border-bottom: 3px solid #F8E831; */
+    margin-bottom: 10px;
+  }
+    
+#emailInp, #passInp {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
     border: none;
-    transition: 0.5s;
-    text-decoration: underline;
-} 
-.custom-control-label{
-    color: #fff;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 15px;
-    letter-spacing: 1px;
-    padding: 0;
-}
-.ask-account {
+    border-radius: 5px;
+  }
+  
+  #emailLabel, #passLabel {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 20x;
+    text-align: left;
+    color: #323232; /* Adjust label color */
+  }
+  
+  
+  .mb-5 h3,
+  .mb-5 input,
+  .mb-5 .custom-control,
+  .mb-5 button,
+  .mb-5 .ask-account {
+    margin-bottom: 15px;
+  }
+  
+  .section-container input.form-control.mb-3 {
     font-size: 18px;
-    color: #fff;
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 2px;
-    margin: 0 10%;
-}
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: #323232;
+  }
+  
+  .section-container input::placeholder {
+    font-size: 18px;
+    color: #323232;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .section-container button#submitBtn.btn.w-100.btn-outline-primary.mb-3 {
+    color: #047BD5;
+    background: #F8E831;
+    font-weight: 800;
+    font-size: 18px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 8px;
+    padding: 10px 55px;
+    margin-top: 0;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
 
-.ask-account-link {
-    color: #0073cf;
-    font-size: 18px;
-    letter-spacing: 2px;
-    font-family: 'Bebas Neue', sans-serif;
-    text-decoration: underline;
-}
+  .section-container button#submitBtn.btn.w-100.btn-outline-primary.mb-3:hover {
+    background: #f9ec63;
+  }
   
  
- 
+  .ask-account {
+    font-size: 15px;
+    margin: 10px 0;
+  }
+  
+  .ask-account-link {
+    color: #047BD5;
+    text-decoration: none;
+  }
+  
+  .ask-account-link:hover {
+    text-decoration: underline;
+    color: #F7A200;
+  }
+  .mylabel{
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
