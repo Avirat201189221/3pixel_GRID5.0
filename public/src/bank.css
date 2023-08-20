@@ -4,23 +4,6 @@ body{
 main {
     height: 100vw;
 }
-.token-display {
-    display: flex;
-    height: 10vh;
-    width: 70vw;
-    /* background-color: #057bd5; */
-    border: 3px solid #057bd5;
-    border-radius: 1rem;
-    margin-top: 2rem; /* Adjusted margin */
-    justify-content: center;
-    align-items: center;
-  }
-.coin-image {
-    max-width: 50px; /* Adjust the maximum width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 10px; /* Adjust margin as needed */
-    margin-left: 10px;
-}
 .container{
     display: flex;
     height:100vw;
@@ -46,7 +29,7 @@ main {
     margin-top:4rem;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    align-items: center;
+    /* align-items: center; */
     justify-items: center;
     width: 90%;
 }
