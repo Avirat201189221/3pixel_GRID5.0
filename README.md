@@ -43,7 +43,7 @@ transparency, and user engagement.
 
 
 ### Our Implementation
-<img src="public/images/implementation/ss1.jpg"> 
+<img src="https://raw.githubusercontent.com/Avirat201189221/3pixel_GRID5.0/master/public/images/implementation/ss1.jpg"> 
 <img src="public/images/implementation/ss2.jpg"> 
 <img src="public/images/implementation/ss3.jpg"> 
 <img src="public/images/implementation/ss4.jpg"> 
