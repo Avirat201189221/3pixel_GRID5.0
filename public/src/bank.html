@@ -17,6 +17,30 @@
     <script defer type="text/javascript" src="./script.js"></script>
     <script defer type="module" src="./logout.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <!-- <script>
+    function updateConversionResult() {
+      const inputElement = document.getElementById("nameInp");
+      const flipkashResultSpan = document.getElementById("kash");
+      const enteredAmount = parseFloat(inputElement.value) || 0;
+      const equivalentFlipKash = enteredAmount * 0.365; 
+      flipkashResultSpan.textContent = equivalentFlipKash;
+    }
+  </script> -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const inputElement = document.getElementById("nameInp");
+      const flipkashResultSpan = document.getElementById("kash");
+  
+      inputElement.addEventListener("input", function () {
+        const enteredAmount = parseFloat(inputElement.value) || 0;
+        const equivalentFlipKash = (enteredAmount * 0.365).toFixed(5);
+        const trimmedEquivalentFlipKash = Number(equivalentFlipKash);
+
+        flipkashResultSpan.textContent = equivalentFlipKash;
+      });
+    });
+  </script>
+  
   </head>
   <body>
     <div class="topnav">
@@ -71,7 +95,7 @@
               <h4 style="color:black;margin-bottom: 2rem;position: top;">Conversion Results</h1>
                 <h4>The equivalent amount of FlipKash for the given amount of tokens is: </h3>
               <div class="result" style="margin-top:2rem">
-              <h4>0 FlipKash</h3>
+              <h4><span id="kash">0</span> FlipKash</h3>
               <img class="coins" src="../images/coins.png">
               </div>
           </div>
@@ -81,4 +105,5 @@
     </main>
     
   </body>
+  
 </html>
