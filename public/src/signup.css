@@ -1,48 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #2f3337 !important;
+    background-color: #047BD5 !important;
+    font-family: "Montserrat", sans-serif;
 }
 
 main {
     width: auto;
     margin: 1% 10%;
 }
-/* navbar css */
-.topnav {
-    overflow: hidden;
-    background-color: #222222;
-    font-family: 'Bebas Neue', sans-serif;
-
-  }
-  
-  .topnav a {
-    float: left;
-    color: #fff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    letter-spacing: 1px;
-  }
-  
-  .topnav a:hover {
-    background-color: #222222;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .topnav a.active {
-    background-color: #0073cf;
-    color: white;
-  }
-  
-  .topnav-right {
-    float: right;
-  }
-         
+     
 .section-container {
     height: 40%;
     max-height: 100vh;
@@ -50,15 +20,12 @@ main {
     margin: 0% 8% 0% 8%;
     display: flex;
     justify-content: center;
-    box-shadow: 0px 3px 8px #002447;
+    box-shadow: 0px 3px 5px #fff;
     border-radius: 25px;
     transition: all 300ms ease-in-out;
-    background-color: #222222;
+    background-color: whitesmoke;
 }
 
-.section-container:hover {
-    box-shadow: 0px 8px 16px;
-}
 
 .section-container .imgBx {
     width:  40%;
@@ -68,12 +35,13 @@ main {
     padding-top: 5%;
     vertical-align: baseline;
     height: auto;
-    margin-right: 2rem;
+    margin-right: 1rem;
+    margin-left: 3rem;
 }
 
 .section-container .imgBx img{
-    width: 30vw;
-    height: 30vw;
+    width: 25vw;
+    height: 25vw;
     border-radius: 2rem;
 }
 
@@ -81,9 +49,6 @@ main {
     padding-top: 2rem;
     width: 50%;
     height: auto;
-
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -91,17 +56,19 @@ main {
 
 .section-container .mb-5.mb-3{
     width: 50%;
+    font-size: 35px;
+    color: #323232; 
+    margin-bottom: 10px;
 }
 
 .section-container h3.mb-3 {
     margin: 0 6%;
     text-align: center;
-    font-size: 50px;
-    color: #fff;
-    border-bottom: 3px solid #0073cf;
+    font-size: 40px;
+    color: #323232;
+    border-bottom: 4px solid #F8E831;
     display: inline-block;
-    letter-spacing: 2px;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .topper {
@@ -109,44 +76,59 @@ main {
 }
 
 .section-container input.form-control.mb-3 {
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 5px;
-    color: #000;
-    letter-spacing: 1px;
+    color: #323232;
     width: 82%;
-    border-radius: 30px;
+    border-radius: 5px;
+    border: none;
     padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 .section-container input::placeholder{
-    font-size: 20px;
+    font-size: 18px;
     color: #000;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .section-container button#sub_btn.btn.w-100.btn-outline-primary.mb-3 {
-    width: 82% !important;
-    background: #0073cf;
-    color: #fff;
-    border-radius: 30px;
-    font-size: 25px;
-    font-family: 'Bebas Neue', sans-serif;
+    color: #047BD5;
+    background: #F8E831;
+    font-weight: 800;
+    font-size: 18px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 8px;
+    padding: 10px 55px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s;
 }
 
 .section-container button#sub_btn.btn.w-100.btn-outline-primary.mb-3:hover {
-    background: #004e8e;
+    background: #f9ec63;
     border: none;
     transition: 0.5s;
-    text-decoration: underline;
 }
 .ask-account {
     font-size: 15px;
-    color: white;
-    font-family: 'Bebas Neue', sans-serif;
+    color: #323232;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .ask-account-link {
     color: #0073cf;
     font-size: 15px;
     text-decoration: underline;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
+.mylabel{
+    text-align: left;
+    margin-top: 10px;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-bottom: 7px;
+  }
+  

@@ -1,4 +1,5 @@
-/* Reset and global styles */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -52,7 +53,6 @@
   .section-container h3.mb-3 {
     font-size: 35px;
     color: #323232; 
-    /* border-bottom: 3px solid #F8E831; */
     margin-bottom: 10px;
   }
     

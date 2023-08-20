@@ -51,8 +51,6 @@ const db = getDatabase();
 //-----------------------------------------The References--------------------------------------------//
 const name = document.getElementById('nameInp');
 const email = document.getElementById('emailInp');
-const aadhar = document.getElementById('aadharInp');
-const username = document.getElementById('userInp');
 const phone = document.getElementById('phoneInp');
 const pass = document.getElementById('passInp');
 const submit = document.getElementById('sub_btn');
@@ -65,10 +63,10 @@ function isEmptyOrSpaces(str) {
 function Validation() {
     let nameregex = /^[a-zA-Z\s]+$/;
     let emailregex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    let userregex = /^[a-zA-Z0-9]{3,}$/;
+    // let userregex = /^[a-zA-Z0-9]{3,}$/;
     let phoneregex = /^(\+\d{1,3}[- ]?)?[0]?\d{10}$/;
     
-    if (isEmptyOrSpaces(name.value) || isEmptyOrSpaces(email.value) || isEmptyOrSpaces(username.value) || isEmptyOrSpaces(phone.value) || isEmptyOrSpaces(pass.value)) {
+    if (isEmptyOrSpaces(name.value) || isEmptyOrSpaces(email.value) || isEmptyOrSpaces(phone.value) || isEmptyOrSpaces(pass.value)) {
         swal("", "Fill in all the fields!", "error");
         return false;
     }
@@ -82,11 +80,6 @@ function Validation() {
         swal("", "Enter a valid email!", "error");
         return false;
     } 
-
-    if (!userregex.test(username.value)) {
-        swal("", "Username must be alphanumeric.\n-Username must be atleast of 3 characters.\n-Username must not contain spaces.", "error");
-        return false;
-    }
 
     if (!phoneregex.test(phone.value)) {
         swal("", "Enter a valid phone number!", "error");
@@ -117,16 +110,14 @@ function RegisterUser() {
         else {
             set(ref(db, "UsersList/" + emailString), {
                 fullname: name.value,
-                username: username.value,
                 email: email.value,
-                aadhar:aadhar.value,
                 phone: phone.value,
                 profileImgURL: "null",
                 password: encPass(),
             })
             .then(() => {
                 swal("User added successfully!", "Please Log In to proceed.", "success").then(function() {
-                    window.location.replace("./login.html");
+                    window.location.replace("../index.html");
                 });
             })
             .catch((error) => {
