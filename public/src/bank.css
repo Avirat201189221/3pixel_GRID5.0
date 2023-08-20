@@ -3,6 +3,7 @@ body{
 }
 main {
     height: 100vw;
+    background-color: whitesmoke;
 }
 .token-display {
     display: flex;
@@ -37,7 +38,7 @@ main {
     color: black!important;
     /* justify-content: center; */
     align-items: center;
-    border-radius: 5rem;
+    border-radius: 1rem;
     border-style: solid;
     border-color: #057bd5;
     margin-top:5rem;
@@ -57,4 +58,10 @@ main {
     max-width:50px;
 }#logout:hover {
     color: blue !important;
+  }
+  .mybtn{
+    padding: 10px 80px;
+    color: #057bd5;
+    margin-top: 20px;
+    border-radius: 3px;
   }

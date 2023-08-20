@@ -17,15 +17,7 @@
     <script defer type="text/javascript" src="./script.js"></script>
     <script defer type="module" src="./logout.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  <!-- <script>
-    function updateConversionResult() {
-      const inputElement = document.getElementById("nameInp");
-      const flipkashResultSpan = document.getElementById("kash");
-      const enteredAmount = parseFloat(inputElement.value) || 0;
-      const equivalentFlipKash = enteredAmount * 0.365; 
-      flipkashResultSpan.textContent = equivalentFlipKash;
-    }
-  </script> -->
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const inputElement = document.getElementById("nameInp");
@@ -40,30 +32,6 @@
       });
     });
   </script>
-  <!-- <script>
-    // document.getElementById("sub_btn").onclick(){
-    //   const balanceSpan=document.getElementById("balance");
-    //   const inputElement = document.getElementById("nameInp");
-    //   console.log(balanceSpan,inputElement)
-    //   document.getElementById("balance").textContent=balanceSpan - (0.365)*inputElement;
-    // }
-    // document.getElementById("sub_btn").addEventListener("click", deductUrl);
-    document.getElementById("sub_btn").addEventListener("click", function() {
-            const balanceSpan = document.getElementById("balance").textContent;
-            const inputElement = document.getElementById("nameInp");
-            
-            // Convert input value to a number
-            const inputValue = parseFloat(inputElement.value);
-            
-            // Check if the input is a valid number
-            if (!isNaN(inputValue)) {
-                const newBalance = parseFloat(balanceSpan.textContent) - (0.365) * inputValue;
-                balanceSpan.textContent = newBalance.toFixed(2); // Display new balance with 2 decimal places
-            } else {
-                console.log("Invalid input");
-            }
-        });
-  </script> -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
         const balanceSpan = document.getElementById("balance");
@@ -88,10 +56,6 @@
         });
     });
 </script>
-
-
-
-  
   </head>
   <body>
     <div class="topnav">
@@ -123,6 +87,16 @@
                   <li><a class="dropdown-item" href="#">ClearTrip</a></li>
                   <li><a class="dropdown-item" href="#">Jabong</a></li>
                 </ul>
+              </div>
+              <div class="dropdown-center">
+                <button style="background-color: #f9ec63;
+                border: none;"
+                  type="text"
+                  id="sub_btn"
+                  class="mybtn"
+                >
+                  Subsidiary chosen: Jabong
+                </button>
               </div>
               <div class="mb-5">
                 <div class="mylabel" style="color:black;margin-top: 2rem;"> 

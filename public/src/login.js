@@ -133,11 +133,11 @@ function login(user) {
     
     if (!keepLoggedIn) {
         sessionStorage.setItem('user', JSON.stringify(user));
-        window.location.replace("./src/bank.html");
+        window.location.replace("./src/subsidiaries.html");
     } else {
         localStorage.setItem('keepLoggedIn','yes');
         localStorage.setItem('user', JSON.stringify(user));
-        window.location.replace("./src/bank.html");
+        window.location.replace("./src/subsidiaries.html");
     }
 }
 
